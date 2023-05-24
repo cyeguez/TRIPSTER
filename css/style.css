@@ -10,16 +10,35 @@ body{
 
 header {
   width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  
+}
+
+.header-logo{
+  height: 100px;
+  
+  top: 1px;
+   
 }
 
 .promotion{
   width: 100%;
-  
+  height: 450px;
   background-image: url("https://ld-wp73.template-help.com/wordpress/prod_24901/v3/wp-content/uploads/2019/07/bg-head.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  flex-wrap: wrap;
+  background-size: cover;
+  background-position: center;
+  
+  
+  
+  
+}
+
+.promotion-price{
+  margin: 0;
+ 
 }
