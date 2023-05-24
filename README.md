@@ -1,0 +1,2 @@
+# TRIPSTER
+pagina web 
