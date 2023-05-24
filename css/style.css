@@ -16,6 +16,10 @@ header {
 }
 
 .promotion{
-  height: 344px;
-  background-image: url("");
+  width: 100%;
+  
+  background-image: url("https://ld-wp73.template-help.com/wordpress/prod_24901/v3/wp-content/uploads/2019/07/bg-head.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-wrap: wrap;
 }
