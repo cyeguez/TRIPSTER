@@ -1,0 +1,21 @@
+:root{
+  --color-title: #FFFFFF;
+  --color-resalt: #FFAB05;
+  --color-font: #29353E;
+}
+
+body{
+  margin: 0 10px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promotion{
+  height: 344px;
+  background-image: url("");
+}
