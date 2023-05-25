@@ -33,6 +33,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .header-logo {
@@ -47,6 +48,9 @@ header {
   justify-content: left;
   background-color: var(--color-title);
   
+  
+ 
+  
 }
 
 .navegation ul{
@@ -57,14 +61,17 @@ header {
 .navegation ul li {
 
   padding: 1rem .5rem;
-  color: var(--color-font);
   font-weight: 400;
+}
+.navegation ul li a{
+  color: var(--color-font);
 }
 
 #navegation-close{
   position: relative;
   right: -17rem;
   top: 2.5rem;
+  
 }
 
 
@@ -142,9 +149,91 @@ header {
 }
 
 .hidden{
-  display: none;
+ display: none;  
+  
+  
 }
 .menu-active{
   display:block;
+  animation: move-right 500ms;
   
+
+  
+  
+}
+
+@keyframes move-left{
+  from{
+    transform: translateX(-400px);
+    
+  }
+  to{
+    transform: translateX(1);
+  }
+}
+
+@keyframes move-right{
+  from{
+    transform: translateX(400px);
+    
+  }
+  to{
+   
+    transform: translateX(-1);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  header{
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-title);
+    
+    
+    
+  }
+  .navegation{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 150%;  
+    height: auto;  
+    margin-right: 0; 
+  }
+  
+  .navegation ul {
+   display: flex;   
+  }
+  .navegation li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+  }
+  #navegation-close{
+    display: none;
+  }
+
+  .header-icon{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    margin-left: 20px;
+    
+    
+
+  }
+
+  .header-icon span{
+    padding-top: 12px;
+    margin: 10px;
+    font-size: 2rem;
+  }
 }
