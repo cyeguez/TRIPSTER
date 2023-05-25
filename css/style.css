@@ -1,11 +1,30 @@
-:root{
-  --color-title: #FFFFFF;
-  --color-resalt: #FFAB05;
-  --color-font: #29353E;
+:root {
+  --color-title: #ffffff;
+  --color-resalt: #ffab05;
+  --color-font: #29353e;
+}
+*html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   margin: 0 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -14,31 +33,118 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  
 }
 
-.header-logo{
+.header-logo {
   height: 100px;
-  
-  top: 1px;
-   
 }
 
-.promotion{
+.navegation {
+  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  background-color: var(--color-title);
+  
+}
+
+.navegation ul{
+  margin-top: 1rem;
+
+}
+
+.navegation ul li {
+
+  padding: 1rem .5rem;
+  color: var(--color-font);
+  font-weight: 400;
+}
+
+#navegation-close{
+  position: relative;
+  right: -17rem;
+  top: 2.5rem;
+}
+
+
+
+.promotion {
   width: 100%;
   height: 450px;
   background-image: url("https://ld-wp73.template-help.com/wordpress/prod_24901/v3/wp-content/uploads/2019/07/bg-head.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
-  
-  
-  
+  line-height: 1.5rem;
 }
 
-.promotion-price{
+.promotion-price {
   margin: 0;
- 
+  padding: 30px 20px;
+  font-size: 2rem;
+  color: var(--color-resalt);
+  font-weight: bold;
+}
+
+.promotion-price span {
+  font-size: 1rem;
+  color: var(--color-title);
+  font-weight: normal;
+}
+
+#menu-icon {
+  color: var(--color-resalt);
+  font-weight: 800;
+}
+
+/* Colores de los iconos con el hover */
+
+.material-symbols-rounded:hover {
+  color: var(--color-resalt);
+}
+
+.promotion-title {
+  font-size: 3rem;
+  color: var(--color-title);
+  padding: 0 20px;
+  margin: 0;
+  line-height: 3.5rem;
+}
+
+.promotion-title span {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.parragraf {
+  color: var(--color-title);
+  padding: 0 20px;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+#button-read {
+  margin-left: 20px;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: var(--color-resalt);
+  color: var(--color-title);
+  font-weight: 600;
+  border: none;
+}
+
+#button-read:hover {
+  cursor: pointer;
+  background-color: var(--color-title);
+  color: var(--color-resalt);
+  transition-delay: 0.2s;
+}
+
+.hidden{
+  display: none;
+}
+.menu-active{
+  display:block;
+  
 }
